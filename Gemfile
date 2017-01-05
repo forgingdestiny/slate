@@ -28,5 +28,3 @@ end
 gem "rake", "~> 10.4.0"
 
 gem 'therubyracer', :platforms => :ruby
-
-gem 'rack-wwwhisper', '~> 1.0'
