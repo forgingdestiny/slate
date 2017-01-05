@@ -1,3 +1,7 @@
+use Rack::Auth::Basic, "Restricted Area" do |username, password|
+  [username, password] == [ENV['AUTH_USER'], ENV['AUTH_PASSWORD']]
+end
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
@@ -34,4 +38,3 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
-
