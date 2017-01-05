@@ -35,3 +35,8 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+if ENV.has_key?('SLATE_AUTH_USER')
+    use Rack::Auth::Basic, "Restricted Area" do |username, password|
+      [username, password] == [ENV['SLATE_AUTH_USER'], ENV['SLATE_AUTH_PASSWORD']]
+    end
+end

@@ -1,13 +1,24 @@
 Slate
 ========
 
-[![Build Status](https://travis-ci.org/tripit/slate.svg?branch=master)](https://travis-ci.org/tripit/slate) [![Dependency Status](https://gemnasium.com/tripit/slate.png)](https://gemnasium.com/tripit/slate) [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/hone/slate)
+[![Build Status](https://travis-ci.org/tripit/slate.svg?branch=master)](https://travis-ci.org/tripit/slate) [![Dependency Status](https://gemnasium.com/tripit/slate.png)](https://gemnasium.com/tripit/slate) [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/forgingdestiny/slate)
 
 Slate helps you create beautiful API documentation. Think of it as an intelligent, responsive documentation template for your API.
 
 <img src="https://dl.dropboxusercontent.com/u/95847291/github%20images/slate/slate_screenshot_new.png" width=700 alt="Screenshot of Example Documentation created with Slate">
 
 *The example above was created with Slate. Check it out at [tripit.github.io/slate](http://tripit.github.io/slate).*
+
+
+Fork Features:
+------------
+This fork is the same as hone's, but with basic auth built in.
+
+To use basic auth, set two environment variables:
+`SLATE_AUTH_USER` and `SLATE_AUTH_PASSWORD`
+
+A basic authentication dialog will now popup whenever accessing the site to make it private.
+
 
 Features
 ------------
